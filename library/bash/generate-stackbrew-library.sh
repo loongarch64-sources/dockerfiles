@@ -60,10 +60,10 @@ getArches() {
 getArches 'bash'
 
 cat <<-EOH
-# this file is generated via https://github.com/tianon/docker-bash/blob/$(fileCommit "$self")/$self
+# this file is generated via https://github.com/loongarch64-sources/dockerfiles/blob/$(fileCommit "$self")/library/bash/$self
 
-Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon)
-GitRepo: /home/merore/local/mini-bashbrew/dockerfiles
+Maintainers: znley (shanjiantao@loongson.cn)
+GitRepo: https://github.com/loongarch64-sources/dockerfiles
 Org: library
 Repo: bash
 EOH
