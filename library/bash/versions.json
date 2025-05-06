@@ -1,4 +1,16 @@
 {
+  "5.0": {
+    "alpine": {
+      "version": "3.21"
+    },
+    "baseline": {
+      "version": "5.0"
+    },
+    "patch": {
+      "version": "18"
+    },
+    "version": "5.0.18"
+  },
   "5.1": {
     "alpine": {
       "version": "3.21"

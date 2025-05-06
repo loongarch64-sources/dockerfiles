@@ -108,6 +108,8 @@ RUN set -eux; \
 {{ ) else "" end -}}
 	\
 	cd /usr/local/src/bash; \
+        wget -O  ./support/config.sub "git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.sub;hb=HEAD"; \
+        wget -O ./support/config.guess "git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.guess;hb=HEAD"; \
 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; \
 {{ if env.version == "devel" or (env.version | split(".") | .[0] | tonumber) >= 5 then "" else ( -}}
 # update "config.guess" and "config.sub" to get more aggressively inclusive architecture support
